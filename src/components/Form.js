@@ -1,7 +1,15 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 
-export default function form(){
+export default function Form(props){
+    const {addUser} = props;
+
+    const [form, setForm] = useState({
+        name: '',
+        age: '',
+        notes: ''
+    })
+
 
 
     return (
